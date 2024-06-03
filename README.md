@@ -21,14 +21,14 @@ module "remote_state" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.41 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.8.2 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.51 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 4.41 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.51 |
 
 ## Modules
 
@@ -51,6 +51,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_dynamodb_table"></a> [dynamodb\_table](#input\_dynamodb\_table) | DynamoDB table that will used to manage a remote state | `string` | n/a | yes |
 | <a name="input_remote_state_bucket"></a> [remote\_state\_bucket](#input\_remote\_state\_bucket) | S3 Bucket that will used to manage a remote state | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags to apply to the resources created by this module | `map(string)` | `{}` | no |
 
 ## Outputs
 
